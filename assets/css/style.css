@@ -14,7 +14,8 @@ h1 {
     text-align: center;
     border: black;
     width: 400px;
-    height: 100px;
+    height: 50px;
+    margin-top: 20px;
 }
 .instructions p {
     background: peachpuff;
@@ -24,7 +25,7 @@ h1 {
     padding: 10px;
     border: black;
     width: 400px;
-    height: 100px;
+    height: 80px;
 }
 .randomNumber {
     background: green;
@@ -41,14 +42,19 @@ h1 {
     background: rgb(106, 255, 255);
     font: black;
     font-size: 14px;
-    text-align: center;
-    padding: 10px;
+    padding: 30px;
     float:left;
     border: black;
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
 }
 img {
     width: 60px;
     height:60px;
+}
+h4 {
+    background: rgb(9, 133, 9);
+    width: 400px;
+    height:20px;
 }
