@@ -38,24 +38,26 @@ function crystalEmerald(){
 crystalEmerald = Math.floor((Math.random() * 12) + 1);
 return result;
 }
-//This function logs the crystal value to the image for each crystal
+//This function logs the crystal value to the image for each 
+//crystal and returns the result to the userScore box.
 
 $(document).on("click", ".crystalRuby",  function() {
   userScore += crystalRubyValue;
   updateUserScore;
   scoreCheck();
+  $(".crystalRuby").text(this);
 }),
-$(".crystalDiamond").on("click", function() {
+$(".crystalDiamond").on("click", ".crystalDiamond",  function() {
     userScore += crystalDiamondValue;
     updateUserScore;
     scoreCheck();
 }),
-$(".crystalYellowDiamond").on("click", function() {
+$(".crystalYellowDiamond").on("click", ".crystalYellowDiamond", function() {
     userScore += crystalYellowDiamond;
     updateUserScore;
     scoreCheck();
 }),
-$(".crystalEmerald").on("click", function() {
+$(".crystalEmerald").on("click", ".crystalEmerald", function() {
     userScore += crystalEmerald;
     updateUserScore;
     scoreCheck();
