@@ -16,51 +16,59 @@ function getRandomNumber() {
 }
 
 //function for crystalRuby value 
-function crystalRuby() {
+function crystalRubyValue() {
 var crystalRuby = Math.floor((Math.random() * 12) + 1);
 return result;
+console.log(crystalRubyValue);
+$('.crystalRuby').html(crystalRubyValue);
 }
 
 //function for crystalDiamond value
-function crystalDiamond() {
+function crystalDiamondValue() {
 var crystalDiamond = Math.floor((Math.random() * 12) + 1);
 return result;
+console.log(crystalDiamondValue);
+$('.crystalDiamond').html(crystalDiamondValue)
 }
 
 //function for crystalYellowDiamond value 
-function crystalYellowDiamond(){
+function crystalYellowDiamondValue(){
 var crystalYellowDiamond = Math.floor((Math.random() * 12) + 1);
 return result;
+console.log(crystalYellowDiamondValue);
+$('.crystalYellowDiamond').html(crystalYellowDiamondValue);
 }
 
 //function for crystalEmerald value 
-function crystalEmerald(){
+function crystalEmeraldValue(){
 var crystalEmerald = Math.floor((Math.random() * 12) + 1);
 return result;
+console.log(crystalEmeraldValue);
+$('.crystalEmerald').html(crystalEmeraldValue);
 }
 //This function logs the crystal value to the image for each 
 //crystal and returns the result to the userScore box.
 $(document).on("click", ".crystalRuby",  function() {
   var userScore = crystalRubyValue;
-  updateUserScore;
+  upd.UserScore;
   scoreCheck();
   $(".crystalRuby").text(this);
 }),
 $(".crystalDiamond").on("click", ".crystalDiamond",  function() {
     var userScore = crystalDiamondValue;
-    updateUserScore;
+    upd.UserScore;
     scoreCheck();
     $(".crystalDiamond").text(this);
 }),
 $(".crystalYellowDiamond").on("click", ".crystalYellowDiamond", function() {
     var userScore = crystalYellowDiamond;
-    updateUserScore;
+    upd.UserScore;
     scoreCheck();
     $(".crystalYellowDiamond").text(this);
 }),
 $(".crystalEmerald").on("click", ".crystalEmerald", function() {
     var userScore = crystalEmerald;
-    updateUserScore;
+    upd.UserScore;
     scoreCheck();
     $(".crystalEmerald").text(this);
 }),
