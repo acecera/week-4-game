@@ -50,30 +50,30 @@ $('.crystalEmerald').html(crystalEmeraldValue);
 //crystal and returns the result to the userScore box.
 $(document).on("click", ".crystalRuby",  function() {
   var userScore = crystalRubyValue;
-  upd.UserScore;
+  $(".userScore").update(UserScore);
   scoreCheck();
   $(".crystalRuby").text(this);
 }),
-$(".crystalDiamond").on("click", ".crystalDiamond",  function() {
+$(document).on("click", ".crystalDiamond",  function() {
     var userScore = crystalDiamondValue;
-    upd.UserScore;
+    $(".userScore").update(UserScore);
     scoreCheck();
     $(".crystalDiamond").text(this);
 }),
-$(".crystalYellowDiamond").on("click", ".crystalYellowDiamond", function() {
+$(document).on("click", ".crystalYellowDiamond", function() {
     var userScore = crystalYellowDiamond;
-    upd.UserScore;
+    $(".userScore").update(UserScore);
     scoreCheck();
     $(".crystalYellowDiamond").text(this);
 }),
-$(".crystalEmerald").on("click", ".crystalEmerald", function() {
+$(document).on("click", ".crystalEmerald", function() {
     var userScore = crystalEmerald;
-    upd.UserScore;
+    $(".userScore").update(UserScore);
     scoreCheck();
     $(".crystalEmerald").text(this);
 }),
 
-//this function checks the score 
+//this function checks the score and adds up wins and losses 
 
 function scoreCheck() {
     if (userScore < randomNumber) {
