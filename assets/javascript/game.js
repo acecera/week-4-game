@@ -37,7 +37,7 @@ crystalEmerald = Math.floor((Math.random() * 12) + 1);
 },
 //This function logs the crystal value to the image for each crystal
 
-$(".crystalRuby").on("click", function() {
+$(document).on("click", ".crystalRuby",  function() {
   userScore += crystalRubyValue;
   updateUserScore;
   scoreCheck();

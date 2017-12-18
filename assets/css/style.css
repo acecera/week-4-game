@@ -1,0 +1,54 @@
+body {
+    background: url("../images/seamlessModern.png");
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    position: absolute;
+}
+h1 {
+    background: rgb(165, 104, 0);
+    font: white;
+    font-size: 30px;
+    text-align: center;
+    border: black;
+    width: 200px;
+    height: 200px;
+}
+.instructions {
+    background: peachpuff;
+    font: green;
+    font-size: 16px;
+    text-align: center
+    padding: 10px;
+    border: black;
+    width: 100px;
+    height: 250px;
+}
+.randomNumber {
+    background: green;
+    font: black;
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    border: black;
+    height: 40px;
+    width: 60px;
+}
+.wins {
+    background: rgb(106, 255, 255);
+    font: black;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+    float:right;
+    border: black;
+    height: 40px;
+    width: 20px;
+}
+.img {
+    width: 60px;
+    height:80px;
+}
