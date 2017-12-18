@@ -1,28 +1,88 @@
 window.onload = function() {
-var crystalRuby = crystalPoints();
-var crystalDiamond = crystalPoints();
-var crystalYellowDiamond = crystalPoints();
-var crystalEmerald = crystalPoints();
-var playerGuess = 0;
+var crystalRuby = [];
+var crystalDiamond = [];
+var crystalYellowDiamond = [];
+var crystalEmerald = [];
 var wins = 0;
 var losses = 0;
-var crystalScore = 0;
+var userScore = 0;
 var randomNumber = getRandomNumber();
-};
+},
 
 //This function chooses a random number for the user to guess to 
-function getRandomNumber(19,120) {
-    min = Math.ceil(19);
-    max = Math.floor(120);
-    return Math.floor((Math.random() * (120 - 19)) + 19);
+
+function getRandomNumber() {
+    var randomNumber,innerHTML = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
     $(".crystalScore").text(getRandomNumber);
-}
-//This function chooses a random for each crystal
-function crystalPoints(1,12) {
-    min = Math.ceil(1);
-    max = Math.floor(12);
-    return Math.floor((Math.random() * (12-1)) + 1);
-}
-$(".crystal").on("click", function(crystalPoints) {
-    $(".crystalRuby").display(crystalPoints);
-})
+},
+
+//function for crystalRuby value 
+function crystalRuby() {
+var crystalRuby = Math.floor((Math.random() * 12) + 1);
+},
+
+//function for crystalDiamond value
+function crystalDiamond() {
+crystalDiamond = Math.floor((Math.random() * 12) + 1);
+},
+
+//function for crystalYellowDiamond value 
+function crystalYellowDiamond(){
+crystalYellowDiamond = Math.floor((Math.random() * 12) + 1);
+},
+
+//function for crystalEmerald value 
+function crystalEmerald(){
+crystalEmerald = Math.floor((Math.random() * 12) + 1);
+},
+//This function logs the crystal value to the image for each crystal
+
+$(".crystalRuby").on("click", function() {
+  userScore += crystalRubyValue;
+  updateUserScore;
+  scoreCheck();
+}),
+$(".crystalDiamond").on("click", function() {
+    userScore += crystalDiamondValue;
+    updateUserScore;
+    scoreCheck();
+}),
+$(".crystalYellowDiamond").on("click", function() {
+    userScore += crystalYellowDiamond;
+    updateUserScore;
+    scoreCheck();
+}),
+$(".crystalEmerald").on("click", function() {
+    userScore += crystalEmerald;
+    updateUserScore;
+    scoreCheck();
+}),
+
+//this function checks the score 
+
+function scoreCheck() {
+    if (userScore < randomNumber) {
+        updateUserScore;
+    } 
+    if (userScore > randomNumber) {
+        losses = losses + 1;
+        document.querySelector(".losses").innerHTML = this.losses + 1;
+        $(".losses").update("losses");
+    }    
+    if (userScore === randomNumber) {
+        wins = wins + 1;
+        document.querySelector(".wins").innerHTML = this.wins + 1;
+        $(".wins").update("wins");
+    };
+},
+
+//This function restarts the game 
+
+function restartGame() {
+    this.crystalRuby = [];
+    this.crystalDiamond = [];
+    this.crystalYellowDiamond = [];
+    this.crystalEmerald = [];
+    this.userScore = [];
+    this.randomNumber = [];
+};
