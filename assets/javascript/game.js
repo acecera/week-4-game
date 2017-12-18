@@ -23,44 +23,46 @@ return result;
 
 //function for crystalDiamond value
 function crystalDiamond() {
-crystalDiamond = Math.floor((Math.random() * 12) + 1);
+var crystalDiamond = Math.floor((Math.random() * 12) + 1);
 return result;
 }
 
 //function for crystalYellowDiamond value 
 function crystalYellowDiamond(){
-crystalYellowDiamond = Math.floor((Math.random() * 12) + 1);
+var crystalYellowDiamond = Math.floor((Math.random() * 12) + 1);
 return result;
 }
 
 //function for crystalEmerald value 
 function crystalEmerald(){
-crystalEmerald = Math.floor((Math.random() * 12) + 1);
+var crystalEmerald = Math.floor((Math.random() * 12) + 1);
 return result;
 }
 //This function logs the crystal value to the image for each 
 //crystal and returns the result to the userScore box.
-
 $(document).on("click", ".crystalRuby",  function() {
-  userScore += crystalRubyValue;
+  var userScore = crystalRubyValue;
   updateUserScore;
   scoreCheck();
   $(".crystalRuby").text(this);
 }),
 $(".crystalDiamond").on("click", ".crystalDiamond",  function() {
-    userScore += crystalDiamondValue;
+    var userScore = crystalDiamondValue;
     updateUserScore;
     scoreCheck();
+    $(".crystalDiamond").text(this);
 }),
 $(".crystalYellowDiamond").on("click", ".crystalYellowDiamond", function() {
-    userScore += crystalYellowDiamond;
+    var userScore = crystalYellowDiamond;
     updateUserScore;
     scoreCheck();
+    $(".crystalYellowDiamond").text(this);
 }),
 $(".crystalEmerald").on("click", ".crystalEmerald", function() {
-    userScore += crystalEmerald;
+    var userScore = crystalEmerald;
     updateUserScore;
     scoreCheck();
+    $(".crystalEmerald").text(this);
 }),
 
 //this function checks the score 

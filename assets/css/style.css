@@ -13,7 +13,8 @@ h1 {
     border: black;
     width: 400px;
     height: 50px;
-    margin-top: 20px;
+    margin-top: 30px;
+    padding-top: 30px;
 }
 .instructions p {
     background: peachpuff;
@@ -32,6 +33,7 @@ h1 {
     text-align: center;
     padding: 10px;
     float: left;
+    clear: both;
     border: black;
     height: 100px;
     width: 100px;
@@ -44,9 +46,9 @@ h1 {
     padding: 30px;
     float: left;
     border: black;
-    height: 100px;
+    height: 90px;
     width: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: right;
 }
 img {
@@ -55,7 +57,7 @@ img {
     float: center;
 }
 h4 {
-    background: rgb(9, 133, 9);
+    background: rgb(0, 255, 170);
     width: 400px;
     height:20px;
 }
