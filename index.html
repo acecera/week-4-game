@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us"
+<head>
+    <meta charset="UTF-8">
+    <title>week-4-game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet"  href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crystals Collector!</h1>
+    </div>
+    <br>
+    <div class="container">
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clickking on a crystal you will add
+            a specific amount of points to your total score.
+        </p>
+        <p>You win the game by matching your total score to random number,
+            you lose the game if your total score goes above the random number.
+        </p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the value of each 
+            crystal.
+        </p>
+    </div>
+    <br>
+    <div class="container">
+        <div class="randomNumber">
+        </div>
+    </div>
+    <br>
+    <div class="container wins losses">
+        <h2>Wins: 0</h2>
+        <h3>Losses: 0</h3>
+    </div>
+    <br>
+    <div>
+        <img class="crystalRuby" src=".assets/images/redRuby.png" value="crystalRuby">
+        <img class="crystalDiamond" src".assets/images/diamond.png" value="crystalDiamon">
+        <img class="crystalYellowDiamond" src=".assets/images/yellowDiamond.png" value="crystalYellowDiamond">
+        <img class="crystalEmerald" src=".assets/images/greenEmerald.png" value="crystalEmerald">
+    </div>
+    <br>
+    <div class="container">
+        <h4>Your total score is: </h4>
+    </div>
+    <br>
+    <div class="container userScore">
+        0
+    </div>
+ <script type="text/javascript" src="assets/javascript/game.js"></script>   
+</body>
+</html>
