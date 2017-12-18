@@ -6,13 +6,13 @@ var crystalEmerald = [];
 var wins = 0;
 var losses = 0;
 var userScore = 0;
-var randomNumber = getRandomNumber();
+var getRandomNumber = getRandomNumber();
 },
 
 //This function chooses a random number for the user to guess to 
 
 function getRandomNumber() {
-    var randomNumber,innerHTML = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+    getRandomNumber.innerHTML = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
     $(".crystalScore").text(getRandomNumber);
 },
 
