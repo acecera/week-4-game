@@ -1,5 +1,5 @@
 body {
-    background: url("../images/seamlessModern.png");
+    background: url("../images/seamlessTexture.png");
 }
 * {
     box-sizing: border-box;
@@ -13,18 +13,18 @@ h1 {
     font-size: 30px;
     text-align: center;
     border: black;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 100px;
 }
-.instructions {
+.instructions p {
     background: peachpuff;
     font: green;
     font-size: 16px;
-    text-align: center
+    text-align: center;
     padding: 10px;
     border: black;
-    width: 100px;
-    height: 250px;
+    width: 400px;
+    height: 100px;
 }
 .randomNumber {
     background: green;
@@ -34,8 +34,8 @@ h1 {
     padding: 10px;
     float: left;
     border: black;
-    height: 40px;
-    width: 60px;
+    height: 100px;
+    width: 100px;
 }
 .wins {
     background: rgb(106, 255, 255);
@@ -43,12 +43,12 @@ h1 {
     font-size: 14px;
     text-align: center;
     padding: 10px;
-    float:right;
+    float:left;
     border: black;
-    height: 40px;
-    width: 20px;
+    height: 80px;
+    width: 80px;
 }
-.img {
+img {
     width: 60px;
-    height:80px;
+    height:60px;
 }
